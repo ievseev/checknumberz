@@ -1,4 +1,0 @@
-ru/dragontime/proxy/config/Configuration.java
- ru.dragontime.proxy.config.Configuration
-ru/dragontime/proxy/config/ConfigurationManager.java
- ru.dragontime.proxy.config.ConfigurationManager
