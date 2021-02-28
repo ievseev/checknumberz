@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static org.hamcrest.Matchers.equalTo;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class IsNumberTest extends BaseAPI {
 
@@ -17,15 +17,18 @@ class IsNumberTest extends BaseAPI {
     void intIsNumber(int number) {
         String requestString = String.format("{\"value\":%d}", number);
 
-        given().
+        boolean isNumber = given().
                 contentType(ContentType.JSON).
                 body(requestString).
-        when().
+                when().
                 post("/isnumber").
-        then().
+                then().
                 statusCode(200).
                 body(matchesJsonSchemaInClasspath("schemas/isnumber.json")).
-                body("isNumber", equalTo(true));
+                extract().
+                path("isNumber");
+
+        assertThat(isNumber).isTrue();
     }
 
     @ParameterizedTest(name = "Check that double value {0} is number")
@@ -33,15 +36,18 @@ class IsNumberTest extends BaseAPI {
     void doubleIsNumber(double number) {
         String requestString = String.format("{\"value\":%s}", number);
 
-        given().
+        boolean isNumber = given().
                 contentType(ContentType.JSON).
                 body(requestString).
-        when().
+                when().
                 post("/isnumber").
-        then().
+                then().
                 statusCode(200).
                 body(matchesJsonSchemaInClasspath("schemas/isnumber.json")).
-                body("isNumber", equalTo(true));
+                extract().
+                path("isNumber");
+
+        assertThat(isNumber).isTrue();
     }
 
     @ParameterizedTest(name = "Check that string value \"{0}\" is not number")
@@ -49,15 +55,18 @@ class IsNumberTest extends BaseAPI {
     void stringIsNotNumber(String str) {
         String requestString = String.format("{\"value\":\"%s\"}", str);
 
-        given().
+        boolean isNumber = given().
                 contentType(ContentType.JSON).
                 body(requestString).
-        when().
+                when().
                 post("/isnumber").
-        then().
+                then().
                 statusCode(200).
                 body(matchesJsonSchemaInClasspath("schemas/isnumber.json")).
-                body("isNumber", equalTo(false));
+                extract().
+                path("isNumber");
+
+        assertThat(isNumber).isFalse();
     }
 
     @DisplayName("Validate request with incorrect body")
@@ -68,9 +77,9 @@ class IsNumberTest extends BaseAPI {
         given().
                 contentType(ContentType.JSON).
                 body(requestString).
-        when().
+                when().
                 post("/isnumber").
-        then().
+                then().
                 statusCode(400);
     }
 
@@ -79,9 +88,9 @@ class IsNumberTest extends BaseAPI {
     void requestWithEmptyBody() {
         given().
                 contentType(ContentType.JSON).
-        when().
+                when().
                 post("/isnumber").
-        then().
+                then().
                 statusCode(400);
     }
 }
