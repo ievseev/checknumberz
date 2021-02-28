@@ -14,7 +14,7 @@ class IsNumberTest extends BaseAPI {
 
     @ParameterizedTest(name = "Check that int value {0} is number")
     @ValueSource(ints = {Integer.MIN_VALUE, -100, 0, 100, Integer.MAX_VALUE})
-    void intIsNumber(int number) {
+    void intIsNumberTrue(int number) {
         String requestString = String.format("{\"value\":%d}", number);
 
         boolean isNumber = given().
@@ -33,7 +33,7 @@ class IsNumberTest extends BaseAPI {
 
     @ParameterizedTest(name = "Check that double value {0} is number")
     @ValueSource(doubles = {Double.MIN_VALUE, -100.1, 0.0, 100.1, Double.MAX_VALUE})
-    void doubleIsNumber(double number) {
+    void doubleIsNumberTrue(double number) {
         String requestString = String.format("{\"value\":%s}", number);
 
         boolean isNumber = given().
@@ -52,7 +52,7 @@ class IsNumberTest extends BaseAPI {
 
     @ParameterizedTest(name = "Check that string value \"{0}\" is not number")
     @ValueSource(strings = {"", "c", "string", "xxi"})
-    void stringIsNotNumber(String str) {
+    void stringIsNumberFalse(String str) {
         String requestString = String.format("{\"value\":\"%s\"}", str);
 
         boolean isNumber = given().
@@ -71,7 +71,7 @@ class IsNumberTest extends BaseAPI {
 
     @DisplayName("Validate request with incorrect body")
     @Test
-    void requestWithIncorrectBody() {
+    void requestWithIncorrectBodyIsNumberClientError() {
         String requestString = String.format("{\"unknown\":\"%s\"}", 10);
 
         given().
@@ -85,7 +85,7 @@ class IsNumberTest extends BaseAPI {
 
     @DisplayName("Validate request without body")
     @Test
-    void requestWithEmptyBody() {
+    void requestWithoutBodyIsNumberClientError() {
         given().
                 contentType(ContentType.JSON).
                 when().
