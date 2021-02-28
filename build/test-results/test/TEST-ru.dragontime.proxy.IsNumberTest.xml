@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.dragontime.proxy.IsNumberTest" tests="16" skipped="0" failures="1" errors="0" timestamp="2021-02-28T17:02:31" hostname="DESKTOP-FV1KV3P" time="3.763">
+<testsuite name="ru.dragontime.proxy.IsNumberTest" tests="16" skipped="0" failures="1" errors="0" timestamp="2021-02-28T19:41:40" hostname="DESKTOP-FV1KV3P" time="7.124">
   <properties/>
-  <testcase name="[1] " classname="ru.dragontime.proxy.IsNumberTest" time="1.965"/>
-  <testcase name="[2] c" classname="ru.dragontime.proxy.IsNumberTest" time="0.128"/>
-  <testcase name="[3] string" classname="ru.dragontime.proxy.IsNumberTest" time="0.116"/>
-  <testcase name="[4] xxi" classname="ru.dragontime.proxy.IsNumberTest" time="0.122"/>
-  <testcase name="[1] 4.9E-324" classname="ru.dragontime.proxy.IsNumberTest" time="0.116"/>
-  <testcase name="[2] -100.1" classname="ru.dragontime.proxy.IsNumberTest" time="0.114"/>
-  <testcase name="[3] 0.0" classname="ru.dragontime.proxy.IsNumberTest" time="0.115"/>
-  <testcase name="[4] 100.1" classname="ru.dragontime.proxy.IsNumberTest" time="0.12"/>
-  <testcase name="[5] 1.7976931348623157E308" classname="ru.dragontime.proxy.IsNumberTest" time="0.117"/>
-  <testcase name="requestWithoutBody()" classname="ru.dragontime.proxy.IsNumberTest" time="0.104"/>
-  <testcase name="requestWithEmptyBody()" classname="ru.dragontime.proxy.IsNumberTest" time="0.137">
+  <testcase name="[1] " classname="ru.dragontime.proxy.IsNumberTest" time="4.33"/>
+  <testcase name="[2] c" classname="ru.dragontime.proxy.IsNumberTest" time="0.183"/>
+  <testcase name="[3] string" classname="ru.dragontime.proxy.IsNumberTest" time="0.183"/>
+  <testcase name="[4] xxi" classname="ru.dragontime.proxy.IsNumberTest" time="0.189"/>
+  <testcase name="[1] 4.9E-324" classname="ru.dragontime.proxy.IsNumberTest" time="0.121"/>
+  <testcase name="[2] -100.1" classname="ru.dragontime.proxy.IsNumberTest" time="0.154"/>
+  <testcase name="[3] 0.0" classname="ru.dragontime.proxy.IsNumberTest" time="0.117"/>
+  <testcase name="[4] 100.1" classname="ru.dragontime.proxy.IsNumberTest" time="0.256"/>
+  <testcase name="[5] 1.7976931348623157E308" classname="ru.dragontime.proxy.IsNumberTest" time="0.121"/>
+  <testcase name="requestWithoutBody()" classname="ru.dragontime.proxy.IsNumberTest" time="0.248"/>
+  <testcase name="requestWithEmptyBody()" classname="ru.dragontime.proxy.IsNumberTest" time="0.15">
     <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;500&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;400&gt; but was &lt;500&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
 	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
@@ -29,9 +28,9 @@ Expected status code &lt;400&gt; but was &lt;500&gt;.
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
@@ -42,9 +41,9 @@ Expected status code &lt;400&gt; but was &lt;500&gt;.
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
 	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
 	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
@@ -53,9 +52,9 @@ Expected status code &lt;400&gt; but was &lt;500&gt;.
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
 	at ru.dragontime.proxy.IsNumberTest.requestWithEmptyBody(IsNumberTest.java:82)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
 	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
@@ -83,7 +82,7 @@ Expected status code &lt;400&gt; but was &lt;500&gt;.
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -93,7 +92,7 @@ Expected status code &lt;400&gt; but was &lt;500&gt;.
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
@@ -106,19 +105,23 @@ Expected status code &lt;400&gt; but was &lt;500&gt;.
 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
@@ -126,9 +129,9 @@ Expected status code &lt;400&gt; but was &lt;500&gt;.
 	at com.sun.proxy.$Proxy2.stop(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
@@ -136,17 +139,17 @@ Expected status code &lt;400&gt; but was &lt;500&gt;.
 	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:832)
+	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="[1] -2147483648" classname="ru.dragontime.proxy.IsNumberTest" time="0.117"/>
+  <testcase name="[1] -2147483648" classname="ru.dragontime.proxy.IsNumberTest" time="0.124"/>
   <testcase name="[2] -100" classname="ru.dragontime.proxy.IsNumberTest" time="0.118"/>
-  <testcase name="[3] 0" classname="ru.dragontime.proxy.IsNumberTest" time="0.112"/>
-  <testcase name="[4] 100" classname="ru.dragontime.proxy.IsNumberTest" time="0.118"/>
-  <testcase name="[5] 2147483647" classname="ru.dragontime.proxy.IsNumberTest" time="0.125"/>
+  <testcase name="[3] 0" classname="ru.dragontime.proxy.IsNumberTest" time="0.144"/>
+  <testcase name="[4] 100" classname="ru.dragontime.proxy.IsNumberTest" time="0.117"/>
+  <testcase name="[5] 2147483647" classname="ru.dragontime.proxy.IsNumberTest" time="0.505"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	http://proxy.dragontime.ru:8090/isnumber
 Proxy:			<none>
@@ -166,11 +169,11 @@ Body:
 HTTP/1.1 500 
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Sun, 28 Feb 2021 17:02:34 GMT
+Date: Sun, 28 Feb 2021 19:41:46 GMT
 Connection: close
 
 {
-    "timestamp": "2021-02-28T17:02:34.154+00:00",
+    "timestamp": "2021-02-28T19:41:47.175+00:00",
     "status": 500,
     "error": "Internal Server Error",
     "message": "",

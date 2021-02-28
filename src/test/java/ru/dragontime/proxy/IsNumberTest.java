@@ -63,9 +63,9 @@ class IsNumberTest extends BaseAPI {
     void requestWithoutBody() {
         given().
                 contentType(ContentType.JSON).
-                when().
+        when().
                 post("/isnumber").
-                then().
+        then().
                 statusCode(400);
     }
 
